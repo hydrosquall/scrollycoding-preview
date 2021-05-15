@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Vega-Lite"
+title: "Seeing with Vega-Lite"
 excerpt: 'A gentle introduction to the Vega Lite Spec, in which you will turn a vertical bar chart into a horizontal lollipop chart'
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2021-04-10T05:35:07.322Z'
@@ -10,9 +10,9 @@ ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
-Vega-Lite is a declarative grammar of graphics. It's a powerful language for building simple and complex visualizations by writing JSON definitions, called "specs".
+Vega-Lite is a declarative grammar of graphics. It's a powerful language for building visualizations by writing JSON definitions (specs).
 
-Full-fledged Vega specs may seem daunting at first. However, they are approachable when you build them up gradually. Let's give it a try.
+Full-fledged specs may seem daunting at first. However, they are approachable when you build them gradually. Let's give it a try.
 
 <Hike>
 
@@ -45,7 +45,7 @@ export default function App() {
 export const barData = {
   table: [
     { name: 'Alex', age: 28, location: 'Pasadena' },
-    { name: 'Bettina', age: 55, location: 'Denver' },
+    { name: 'Beth', age: 55, location: 'Denver' },
     { name: 'Casper', age: 43, location: 'Athens' },
     { name: 'Dina', age: 31, location: 'Pigeon Forge' },
     { name: 'Elan', age: 51, location: 'Brooklyn' },
