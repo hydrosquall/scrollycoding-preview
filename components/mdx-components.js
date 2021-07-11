@@ -17,19 +17,27 @@ const classes = {
 }
 
 function Hike({ children, previewProps, codeProps, ...props }) {
-  const steps = useMdxSteps(children, {
-    ...previewProps,
-    preset: {
-      customSetup: {
-        dependencies: {
-          "react-svg-curve": "0.2.0"
-        }
-      }
+  const steps = useMdxSteps(
+    children,
+    {
+      ...previewProps,
+      preset: {
+        customSetup: {
+          dependencies: {
+            'react-svg-curve': '0.2.0',
+            'react-vega': '^7.4.2',
+            'vega': '^5.20.2',
+            'vega-lite': '^5.0.0',
+            'prop-types': '*'
+          },
+        },
+      },
+    },
+    {
+      ...codeProps,
+      minColumns: 40,
     }
-  }, {
-    ...codeProps,
-    minColumns: 40,
-  })
+  )
   return <HikeSteps steps={steps} {...props} classes={classes} />
 }
 
